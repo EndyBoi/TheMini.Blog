@@ -1,24 +1,25 @@
-# README
+<p align='center'>
+  Badges will go here.
+</p>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Table Of Contents
 
-Things you may want to cover:
+- Table of Contents
+- About
+- Stack Versions
 
-* Ruby version
+## About
 
-* System dependencies
+Simple clone of twitter built in Ruby/Rails that will utilise the assents from the Ironbook project.
 
-* Configuration
+## Stack Versions
 
-* Database creation
+Ruby `2.7.2`
 
-* Database initialization
+Rails `6.1.3.2`
 
-* How to run the test suite
+NodeJS `14.16.1`
 
-* Services (job queues, cache servers, search engines, etc.)
+Yarn `1,22,11`
 
-* Deployment instructions
-
-* ...
+## This readme is in progress
