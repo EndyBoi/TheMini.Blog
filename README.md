@@ -20,6 +20,6 @@ Rails `6.1.3.2`
 
 NodeJS `14.16.1`
 
-Yarn `1,22,11`
+Yarn `1.22.11`
 
 ## This readme is in progress
