@@ -49,7 +49,9 @@ class UserTest < ActiveSupport::TestCase
   test "email addresses should be unique" do
     duplicate_user = @user.dup
     @user.save
-    assert_not duplicate_user.valid?
+    assert_raises ActiveRecord::RecordNotUnique do
+      duplicate_user.save
+    end
   end
 
   test "email addresses should be saved as lower-case" do 

@@ -1,6 +1,11 @@
 @import bootstrap-sprockets
 @import bootstrap
 
+@mixin box_sizing
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
 /* Main 
 
 body
@@ -57,6 +62,57 @@ p
 
 /* Body?
 
+/* Forms
+
+input, textarea, select, .uneditable-input
+  border: 1px solid #bbb
+  width: 100%
+  margin-bottom: 15px 
+  @include box_sizing
+  
+input 
+  height: auto !important
+
+#error_explination
+  color: red
+  ul
+    color: red 
+    margin: 0 0 30px 0
+
+.field_with_errors
+  @extend .has-error
+  .form-control
+    color: $state-danger-text
+
+/* User
+
+aside 
+  section.user_info
+    margin-top: 20px
+  section
+    paddong: 10px
+    margin-top: 20px
+    &:first-cild
+      borer: 0
+      padding-top: 0
+    span
+      display: block
+      margin-bottom: 3px
+      line-height: 1
+    h1
+      font-size: 1.4em
+      text-align: left
+      letter-sapcing: -1px
+      margin-bottom: 3px
+      margin-top: 0px
+
+.gravatar
+  float: left
+  margin-right: 10px
+
+.gravatar_edit
+  margin-top: 15px
+
 /* Footer
 
 footer
@@ -76,3 +132,12 @@ footer
     li
       float: left
       margin-left: 15px
+
+/* Misc.
+
+.debug_dump 
+  clear: both
+  float: left
+  width: 100%
+  margin-top: 45px
+  @include box_sizing
