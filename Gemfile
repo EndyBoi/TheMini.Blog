@@ -11,6 +11,7 @@ gem 'bootsnap',   '1.7.2', require: false
 gem "bootstrap-sass", "~> 3.4"
 gem "bootstrap", "~> 5.1"
 gem "bcrypt", "~> 3.1"
+gem "jquery", "~> 0.0.1"
 
 group :development, :test do
   gem 'sqlite3', '1.4.2'
