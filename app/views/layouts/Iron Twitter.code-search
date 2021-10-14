@@ -1,0 +1,24 @@
+# Query: Iron Twitter
+# ContextLines: 1
+
+4 results - 4 files
+
+app/helpers/application_helper.rb:
+  3    def title(page_title ='')
+  4:     base = "themini.blog"
+  5      if page_title.empty?
+
+app/views/layouts/_header.html.erb:
+  2    <div class="container">
+  3:     <%= link_to "themini.blog", root_path, id: "logo" %> 
+  4      <nav>
+
+app/views/static_pages/home.html.erb:
+  2    <h1>
+  3:     Welcome to themini.blog.
+  4    </h1>
+
+test/controllers/static_pages_controller_test.rb:
+  5    def setup
+  6:     @base_title = "themini.blog"
+  7    end

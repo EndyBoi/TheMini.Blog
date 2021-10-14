@@ -3,7 +3,7 @@ require "test_helper"
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
 
   def setup
-    @base_title = "Iron Twitter"
+    @base_title = "themini.blog"
   end
 
   test "should get root" do

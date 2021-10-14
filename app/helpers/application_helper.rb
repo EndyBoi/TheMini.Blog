@@ -1,7 +1,7 @@
 module ApplicationHelper
 
   def title(page_title ='')
-    base = "Iron Twitter"
+    base = "themini.blog"
     if page_title.empty?
       base
     else
