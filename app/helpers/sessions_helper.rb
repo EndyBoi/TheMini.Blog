@@ -12,6 +12,11 @@ module SessionsHelper
     end
   end
 
+  def log_out
+    reset_session
+    @current_user = nil
+  end
+
   # Returns true/flase if logged in or not.
   def logged_in?
     !current_user.nil?
