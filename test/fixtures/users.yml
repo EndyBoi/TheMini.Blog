@@ -1,4 +1,10 @@
 conan:
-  name: Conan Test
-  email: Conan@testemail.com
+  name: Conan Example
+  email: Conan@example.com
   password_digest: <%= User.digest('password') %>
+
+archer:
+  name: Sterling Archer
+  email: duchess@example.gov
+  password_digest: <%= User.digest('password') %>
+    
