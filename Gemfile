@@ -8,6 +8,9 @@ gem 'webpacker',  '5.4.0'
 gem 'turbolinks', '5.2.1'
 gem 'jbuilder',   '2.10.0'
 gem 'bootsnap',   '1.7.2', require: false
+gem "faker", "~> 2.19"
+gem "will_paginate", "~> 3.3"
+gem "bootstrap-will_paginate", "~> 1.0"
 gem "bootstrap-sass", "~> 3.4"
 gem "bootstrap", "~> 5.1"
 gem "bcrypt", "~> 3.1"
@@ -23,7 +26,6 @@ group :development do
   gem 'listen','3.4.1'
   gem 'spring','2.1.1'
   gem 'spring-watcher-listen', '2.0.1'
-
 end
 
 group :test do
